@@ -1,0 +1,36 @@
+{
+
+  "description": "",
+  "manifest_version": 2,
+  "name": "Test Sessions Tracker",
+  "version": "1.0",
+  "homepage_url": "https://github.com/mdn/webextensions-examples/tree/master/beastify",
+  "icons": {
+    "48": "icons/icon.png"
+  },
+
+  "applications": {
+    "gecko": {
+      "id": "beastify@mozilla.org",
+      "strict_min_version": "45.0"
+    }
+  },
+
+  "permissions": [
+    "activeTab"
+  ],  
+
+  "browser_action": {
+    "default_icon": "icons/icon.png",
+    "default_title": "Test Sessions Tracker",
+    "default_popup": "popup/index.html"
+  },
+  
+  
+  "web_accessible_resources": [
+      "beasts/frog.jpg",
+      "beasts/turtle.jpg",
+      "beasts/snake.jpg"
+  ]
+
+}

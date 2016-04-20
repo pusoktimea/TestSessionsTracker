@@ -1,0 +1,119 @@
+<!-- <!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="choose_beast.css"/>
+  </head>
+
+<body>
+<p>HI!</p>
+</body>
+
+</html> -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Test sessions tracker</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="jquery-2.2.1.js"></script>
+    <script type="text/javascript" src="popup.js"></script>
+</head>
+<body>
+
+	<div id="title" class="containerone">
+	<h1>Test sessions tracker</h1>
+		<div id="generalInfo" class="container">
+
+			<div class="area">
+				<p>Area</p><input id="areaInput" type="text" placeholder=""></input>
+			</div>
+
+			<div class="charter">
+				<p>Charter</p><input id="charterInput" type="text" placeholder=""></input>
+			</div>
+
+			<div class="tester">
+				<p>Tester</p><input id="testerInput" type="text" placeholder=""></input>
+			</div>
+
+			<div class="environment">
+				<p>Environment</p><input id="environmentInput" type="text" placeholder=""></input>
+			</div>
+
+			<div class="duration">
+			 <form id="sessionDuration">
+			<p>Duration</p>
+			<input class="duration" id="dur" type="radio" name="duration" value="30"><span id="durationValues">30</span><br>
+  			<input class="duration" id="dur" type="radio" name="duration" value="60" checked><span id="durationValues">60</span><br>
+  			<input class="duration" id="dur" type="radio" name="duration" value="90"><span id="durationValues">90</span><br><br>
+			</form>
+			</div>
+
+			<br>
+			<div class="submit">
+				<button id="startSessionButton" >Start Session!</button>
+			</div>
+
+		</div>
+
+	</div>
+
+		<div id="session" class="container setup">
+
+			<ul class="field_list" id="textboxes">
+				<li class="setup_field" data-function="setup">
+					<input type="text" id="setupInput" class="target" placeholder="Setup" autofocus="autofocus"></input>
+				</li>
+				<li class="test_field" data-function="test">
+					<input type="text" id="testInput" class="target"  placeholder="Test" autofocus="autofocus" ></input>
+				</li>
+				<li class="bug_field" data-function="bug">
+					 <input type="text" id="bugInput" class="target" placeholder="Bug"></input>
+				</li>
+				<li class="offcharter_field" data-function="offcharter">
+					 <input type="text" id="offcharterInput"class="target" placeholder="Offcharter"></input>
+				</li>
+				<li class="note_field" data-function="note" >
+					<input type="text" id="noteInput"class="target" placeholder="Note"></input>
+				</li>
+				<li class="question_field" data-function="question">
+					<input type="text" id="questionInput"class="target" placeholder="Question"></input>
+				</li>
+				<li class="nexttime_field" data-function="nexttime">
+					<input type="text" id="nexttimeInput" class="target"  placeholder="Next Time"></input>
+				</li>
+
+				</ul>
+
+				<ul id="icon_list">
+
+					<li class="setup_icon" ><i class="fa fa-cog circle-icon"></i></li>
+					<li class="test_icon" ><i class="fa fa-check"></i></li>
+					<li class="bug_icon" ><i class="fa fa-bug"></i></li>
+					<li class="offcharter_icon" ><i class="fa fa-external-link"></i></li>
+					<li class="note_icon" ><i class="fa fa-sticky-note" aria-hidden="true"></i></li>
+					<li class="question_icon" ><i class="fa fa-question"></i></li>
+					<li class="nexttime_icon"><i class="fa fa-forward"></i></li>
+
+				</ul>
+				<div class="stopSession">
+					<button id="stopSessionButton" >Stop Session!</button>
+				</div>
+
+			</div>
+		</div>
+
+
+
+	<footer>
+
+	</footer>
+
+
+
+
+</body>
+</html>
